@@ -173,12 +173,19 @@
         <p class="feedback-subetitle">Contact Us</p>
         <h2 class="feedback-title">Make an Appointment</h2>
         <div class="section__box feedback-grid">
+          <p class="js_appointment-success-message appointment-success-message">Message successfully sended</p>
           <div class="feedback-input">
-            <input class="input-text" type="text" placeholder="Full Name * ">
-            <input class="input-text" type="text" placeholder="Email * ">
+            <div>
+              <span class="js_appointment-input-name-error input__error">Full Name can’t be empty</span>
+              <input class="js_appointment-input-name input-text" type="text" placeholder="Full Name * ">
+            </div>
+            <div>
+              <span class="js_appointment-input-email-error input__error">Email can’t be empty</span>
+              <input class="js_appointment-input-email  input-text" type="text" placeholder="Email * ">
+            </div>
           </div>
             <textarea class="input-message" type="text" placeholder="Message"></textarea>
-            <a class="btn btn_blue" href="#">Book Appointment</a>
+            <button class="js_appointment-btn btn btn_blue" href="#">Book Appointment</button>
         </div>
       </div>
     </section>
