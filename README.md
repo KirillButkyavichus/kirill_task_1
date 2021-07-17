@@ -11,6 +11,7 @@ Git репозиторий уже создан
 #### Что почитать перед выполнением:
 - https://learn.javascript.ru/searching-elements-dom
 - https://learn.javascript.ru/introduction-browser-events#addeventlistener
+- https://learn.javascript.ru/function-basics
 - https://learn.javascript.ru/basic-dom-node-properties
 - https://learn.javascript.ru/styles-and-classes
 - https://developer.mozilla.org/en-US/docs/Web/API/Console/log
