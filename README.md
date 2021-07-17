@@ -10,6 +10,8 @@ Git репозиторий уже создан
 
 #### Что почитать перед выполнением:
 - https://learn.javascript.ru/searching-elements-dom
+- https://learn.javascript.ru/introduction-browser-events#addeventlistener
+- https://learn.javascript.ru/function-basics
 - https://learn.javascript.ru/basic-dom-node-properties
 - https://learn.javascript.ru/styles-and-classes
 - https://developer.mozilla.org/en-US/docs/Web/API/Console/log
@@ -25,8 +27,8 @@ Git репозиторий уже создан
 #### Как должно работать
 
 1) Нажимаем на кнопку ![](./task/button.png)
-2) Если есть сообщение об успешной оплате, то нужно его скрыть
-3) Должна произойти проверка в инпутах `Full Name` и `Email` на то что они не пустые. Если какой-то инпут невалидный, то должно вывестить сообщение в соответствии с дизайном + инпут окрашивается в красный цвет
+2) Если есть сообщение об успешной отправке сообщения, то нужно его скрыть
+3) Должна произойти проверка в инпутах `Full Name` и `Email` на то что они не пустые.Если какой-то инпут пустой, то должно вывестить сообщение в соответствии с дизайном + инпут окрашивается в красный цвет
 4) Если поля `Full Name` и `Email` заполнены, при нажитии на кнопку должно вывестить сообщение от успешной отправке формы - [дизайн](https://www.figma.com/file/SMj8GBKQijAq2YJo869F3t/Insurantly---insurance-agency-html5-website-template-(Community)?node-id=106%3A2)
 5) Форма очищается
 6) В консоль браузера должно упасть сообщение вида ![](./task/console.png)
