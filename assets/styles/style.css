@@ -84,6 +84,7 @@ body {
   align-items: center;
   height: fit-content;
   width: fit-content;
+  cursor: pointer;
 }
 
 .btn_small {

@@ -79,3 +79,15 @@ loginFormButton.addEventListener('click',function()  {
     console.log(modalFormData);
   }
 })
+
+// Задание№3
+
+const buttonLearMore = document.querySelector('.js-learn_btn');
+const scrollProject = document.querySelector('.project-grid');
+buttonLearMore.addEventListener('click', handleButtonClick);
+
+function handleButtonClick() {
+  scrollProject.scrollIntoView({block: "center", behavior: "smooth"})
+  
+
+}
