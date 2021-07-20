@@ -18,8 +18,8 @@ button.addEventListener('click', function() {
   }
 
   if (emailInputValue==="") {
-    const nameInputError = document.querySelector('.js_appointment-input-email-error');
-    nameInputError.classList.add('input__error-active');
+    const emailInputError = document.querySelector('.js_appointment-input-email-error');
+    emailInputError.classList.add('input__error-active');
   }
 
   if (nameInputValue!=="" && emailInputValue!=="") {
@@ -34,3 +34,48 @@ button.addEventListener('click', function() {
   }
 }) 
 
+// Задание №2
+const loginButton = document.querySelector('.header-login__link');
+console.log(loginButton);
+loginButton.addEventListener('click',function(){
+  const modalWindow = document.querySelector('.modal');
+  modalWindow.classList.add('modal_active');
+
+})
+const modalBodyClose = document.querySelector('.modal-body__close');
+modalBodyClose.addEventListener('click',function(){
+  const modalWindow = document.querySelector('.modal');
+  modalWindow.classList.remove('modal_active');
+})
+
+const loginFormButton = document.querySelector('.js-modal__btn');
+console.log(loginFormButton);
+loginFormButton.addEventListener('click',function()  {
+  const emailInput = document.querySelector('.js_modal-input-email');
+  const passwordInput = document.querySelector('.js_modal-input-password');
+  const emailInputValue = emailInput.value;
+  const passwordInputValue = passwordInput.value;
+  const successModalMessage = document.querySelector('.js_modal-success-message'); 
+  successModalMessage.classList.remove('modal-success-message-active');
+
+  if (emailInputValue ==="") {
+    const emailInputError = document.querySelector('.js_modal-input-email-error');
+    emailInputError.classList.add('input__error-active');
+  }
+
+  if (passwordInputValue ==="") {
+    const passwordInputError = document.querySelector('.js_modal-input-password-error');
+    passwordInputError.classList.add('input__error-active');
+  }
+
+  if (emailInputValue !=="" && passwordInputValue !=="" ) {
+    successModalMessage.classList.add('modal-success-message-active');
+    emailInput.value ="";
+    passwordInput.value ="";
+    const modalFormData = {
+      email: emailInputValue,
+      password: passwordInputValue
+    }
+    console.log(modalFormData);
+  }
+})
