@@ -91,3 +91,15 @@ function handleButtonClick() {
   
 
 }
+
+// Задание №4
+
+const buttonMenu = document.querySelector('.header-menu__burger');
+const burgerMenuClose = document.querySelector('.menu-burger__close');
+buttonMenu.addEventListener('click',toggleMenu);
+burgerMenuClose.addEventListener('click',toggleMenu);
+function toggleMenu ()  {
+  const menuWindow = document.querySelector('.menu');
+  menuWindow.classList.toggle('menu_active');
+
+}
